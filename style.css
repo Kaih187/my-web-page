@@ -1,0 +1,118 @@
+*{ margin: 0%;
+    padding: 0%;
+}
+.wrapper{
+    width: 1170;
+    margin: auto;
+}
+header{
+    background: linear-gradient(rgba(107, 64, 64, 0.6),rgba(88, 32, 32, 0.6)), url("new.jpg");
+    height: 100vh;
+    background-size:cover;
+    -webkit-background-size:cover;
+    background-position: center center;
+    position: relative;
+}
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: poppins;
+    font-size: 14px;
+}
+.nav-area li a:hover{
+    background: #fff;
+    color: #333;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.welcome-text{
+    color: #fff;
+    position: absolute;
+    width: 700px;
+    height: 350px;
+    margin:20% 30%;
+    text-align: center;
+}
+.welcome-text h1{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.welcome-text a{
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+}
+.welcome-text a:hover{
+    background: #fff;
+    color: #333;
+}
+footer{
+    float: right;
+    margin: 0;
+    padding: 0;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+
+}
+.sm{
+    float: right;
+    margin: auto;
+    padding: 20px 30px;
+    align-items: center;
+    caption-side: bottom;
+    justify-content:center;
+}
+.sm a{
+    display: inline-block;
+    font-size: 40px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: chartreuse;
+    margin: o 16px;
+    transition: 4s linear;
+    position: relative;
+}
+.sm a::before, .sm a::after{
+    content: none;
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 4px solid;
+    left: 0;
+    top: 0;
+    transition: 4s linear;
+}
+.sm a:hover{
+    transform: scale(.5);
+}
+.sm a:hover::before{
+    border-left: 4px solid;
+    border-right: 4px solid;
+    transform: skewX(20deg);
+}
+.sm a:hover::after{
+    border-left: 4px solid;
+    border-right: 4px solid;
+    transform: skewY(20deg);
+}

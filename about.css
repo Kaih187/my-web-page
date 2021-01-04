@@ -1,0 +1,19 @@
+body{
+    margin: auto;
+    padding: 0%;
+    align-items: center;
+    position: absolute;
+   
+}
+header{
+background:url("circle.jpg");
+height: 100vh;
+background-size:cover;
+-webkit-background-size:cover;
+background-position: center center;
+position: relative;
+}
+.h1{
+    color: aliceblue;
+    text-align: center;
+}
